@@ -1,0 +1,8 @@
+# ملفات تنفيذ C++
+*.o
+*.out
+app
+build/
+
+# VS Code
+.vscode/
