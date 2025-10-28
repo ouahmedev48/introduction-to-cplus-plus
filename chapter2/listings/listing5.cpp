@@ -13,6 +13,6 @@ int main() {
 
     cout << "DBL_MIN is " << __DBL_MIN__ << endl;
     cout << "DBL_MAX is " << __DBL_MAX__ << endl;
-    
+
     return 0; 
 }
