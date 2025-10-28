@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    const double PI = 3.14159;
+
+    // Step 1: Read in radius
+    cout << "Enter a radius: ";
+    double radius;
+    cin >> radius;
+
+    // Step 2: Compute area
+    double area = radius * radius * PI;
+
+    // Step 3: Display area
+    cout << "The area is " << area << endl;
+    return 0;
+}
