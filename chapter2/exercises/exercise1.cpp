@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-
+    // Convert cilsius to fahrenheit
     // Prompt the user to enter a celsius degree in a double value
     double celsius;
     cout << "Enter a celsius degree in a double value: ";
