@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
 
-    // Prompt the user to enter an integer between 0 and 100
+    // Prompt the user to enter an integer between 0 and 1000
     int number;
     cout << "Enter a number between 0 and 1000: ";
     cin >> number;
