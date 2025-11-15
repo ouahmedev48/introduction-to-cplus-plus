@@ -28,8 +28,12 @@ int main() {
     int numberOfPennies = remainingAmount;
 
     // Display the result
-    cout << amount << " cents contains \n   " << numberOfDollars << " dollars\n   " << numberOfQuarters << " quarters\n   "
-         << numberOfDimes << " dimes\n   " << numberOfNickels << " nickels\n   " << numberOfPennies << " pennies\n";
+    cout << amount << " cents contains" << endl << 
+      "   " << numberOfDollars << " dollars" << endl << 
+      "   " << numberOfQuarters << " quarters" << endl << 
+      "   " << numberOfDimes << " dimes" << endl <<  
+      "   " << numberOfNickels << " nickels" << endl <<  
+      "   " << numberOfPennies << " pennies" << endl;
 
 
     return 0;
