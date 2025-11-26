@@ -1,38 +1,32 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
 using namespace std;
 
 int main() {
 
-    // Prompt the user to enter weight in pounds
-    cout << "Enter weight in pounds: ";
-    double weight;
-    cin >> weight;
+    // Generate two random single-digit integers
+    srand(time(0));
+    int number1 = rand() % 10;
+    int number2 = rand() % 10;
 
-    // Prompt the user to enter height in inches
-    cout << "Enter height in inches: ";
-    double height;
-    cin >> height;
+    if (number1 < number2) {
+        int temp = number1;
+        number1 = number2;
+        number2 = number1;
+    }
 
-    const double KILOGRAMS_PER_POUND = 0.45359237;  // contant
-    const double METERS_PER_INCHE = 0.0254;         // constant
+    // Prompt the user to enter answer
+    cout << "What is " << number1 << " - " << number2 << "? ";
+    int answer;
+    cin >> answer;
 
-    // Compute BMI
-    double weightInKiligram = weight * KILOGRAMS_PER_POUND;
-    double heigthInMeter = height * METERS_PER_INCHE;
-
-    double bmi = weightInKiligram / pow(heigthInMeter, 2);
-
-    // Display the result
-    cout << "BMI is " << bmi << endl;
-
-    if (bmi < 18.5)
-        cout << "Underweight" << endl;
-    else if (bmi < 25)
-        cout << "Normal" << endl;
-    else if (bmi < 30)
-        cout << "Overweight" << endl;
+    if (number1 - number2 == answer)
+        cout << "You are correct" << endl;
     else
-        cout << "Obase" << endl;
+        cout << "Your answer is wrong." << number1 << " - " << number2 << " should be " << (number1 - number2) << endl;
+
+
+
     return 0;
 }
